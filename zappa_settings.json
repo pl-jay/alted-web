@@ -1,0 +1,23 @@
+{
+    "dev": {
+        "django_settings": "alteducation_web.settings",
+        "profile_name": "eb-cli",
+        "project_name": "alteducation-we",
+        "runtime": "python3.9",
+        "s3_bucket": "zappa-a3o3eejww",
+        "aws_region": "sa-east-1",
+        "vpc_config": {
+            "SubnetIds": [
+                "subnet-0343fc63f50d9bcb7",
+                "subnet-0c175dcf733afa920",
+                "subnet-037bce217527b9255"
+            ],
+            "SecurityGroupIds": [
+                "sg-0fcd61060de7357ad"
+            ]
+        }
+    }
+}
+
+// ZAPPA deployemnt is faliling because of the DJango And Sqlite version mismatch use django 2.1.9
+// https://qm24ciw4gj.execute-api.sa-east-1.amazonaws.com/dev

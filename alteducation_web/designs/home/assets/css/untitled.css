@@ -1,0 +1,45 @@
+.row {
+}
+
+#second-section {
+  background-color: #03989e;
+}
+
+#second-row {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#second-img-col {
+  padding: 0px;
+}
+
+#second-txt-col {
+  padding-right: 40px;
+}
+
+#second-txt-col h5 {
+  color: #999999;
+  line-height: 1.8;
+}
+
+#third-heading {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #03989e;
+}
+
+#third-heading h1 {
+}
+
+#third-container {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+#third-img {
+  width: 412px;
+  height: 156px;
+}
+

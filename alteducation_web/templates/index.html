@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="{% static 'css/Article-List.css' %}">
+    <link rel="stylesheet" href="{% static 'css/untitled.css' %}">
+    <style>
+        .masthead {
+            background: url(" {% static 'img/headerImg.png'%} ")no-repeat;
+            background-size: cover;
+            padding-top: 900px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="masthead text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </header>
+    <div class="row" id="second-section">
+        <div class="col-11" id="second-img-col"><img src="{% static 'img/s3.jpg'%}" style="width: 100%;"></div>
+        <div class="col-11" style="background-color: white;">
+            <div class="row" id="second-row">
+                <div class="col-5 text-center"><img src="{% static 'img/s(1).png' %}" style="margin: 0px;"></div>
+                <div class="col text-center" id="second-txt-col">
+                    <h5 class="text-left"><br><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                        1500s, when an unknown printer took a galley of type and scrambled
+                        it to make a type specimen book.<br><br></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center" id="third-section">
+        <div class="col">
+            <h1 id="third-heading"><br><strong>Lorem Ipsum&nbsp;is simply dummy text of&nbsp;</strong><br></h1>
+        </div>
+    </div>
+    <div class="article-list">
+        <div class="container-fluid" id="third-container">
+            <div class="intro"></div>
+            <div class="row articles">
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" id="third-img"
+                            src="{% static 'img/s(2).png' %}"></a>
+                    <h3 class="text-left name">Article Title</h3>
+                    <p class="text-left description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" id="third-img"
+                            src="{% static 'img/s3.png'%}"></a>
+                    <h3 class="text-left name">Article Title</h3>
+                    <p class="text-left description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4 item"><a href="{% url 'login_page' %}"><img class="img-fluid"
+                            id="third-img"
+                            src="{% static 'img/s(3).png'%}"></a>
+                    <h3 class="text-left name">Article Title</h3>
+                    <p class="text-left description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus.
+                        Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{'% static bootstrap/js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>

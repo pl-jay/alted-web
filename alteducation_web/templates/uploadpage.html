@@ -1,0 +1,100 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>pathum-upload page</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Actor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+    <link rel="stylesheet" href="{% static 'css/Login-Form-Clean.css' %}">
+    <link rel="stylesheet" href="{% static 'css/Navigation-with-Button.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+    <style>
+        .upload-button {
+            padding-right: 100px;
+            padding-left: 100px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 32px;
+            font-family: 'Alfa Slab One', cursive;
+            background-color: #314b3f;
+        }
+
+        .submit-button {
+            padding-right: 55px;
+            padding-left: 55px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 32px;
+            font-family: 'Alfa Slab One', cursive;
+            background-color: #314b3f;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navigation-clean-button">
+        <div class="container"><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
+                    class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon text-black-50"
+                    style="filter: blur(0px) brightness(200%) contrast(200%);"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">First Item</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="#">Second Item</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown"
+                            aria-expanded="false" href="#">Dropdown </a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation"
+                                href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second
+                                Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" style="margin-right: 0px;margin-left: 0px;margin-top: 50px;">
+            <form action="{{ file_upload_api }}" method="POST" enctype="multipart/form-data">
+                <div class="col">
+                    <h4 style="font-family: 'Alfa Slab One', cursive;">Submit text or books to</h4>
+                    <h2 style="font-family: 'Alfa Slab One', cursive;">Intelligibility Analysis&nbsp;</h2>
+
+                    <input class="btn btn-primary upload-button" type="file" name="file" />
+
+                    <div
+                        class="form-check"
+                        style="margin-top: 9px;margin-bottom: 9px;font-family: 'Allerta Stencil', sans-serif;"><input
+                            class="form-check-input" type="checkbox" disabled checked id="formCheck-1"><label
+                            class="form-check-label"
+                            for="formCheck-1">Editable Format (doc, txt)</label></div>
+                    <div class="form-check"
+                        style="margin-top: 9px;margin-bottom: 9px;font-family: 'Allerta Stencil', sans-serif;"><input
+                            class="form-check-input" type="checkbox" disabled checked id="formCheck-1"><label
+                            class="form-check-label"
+                            for="formCheck-1">Minimize size of text (?)</label></div>
+                    <div class="form-check" style="margin-top: 9px;margin-bottom: 9px;font-family: Actor, sans-serif;">
+                        <input class="form-check-input" type="checkbox" disabled checked id="formCheck-1"><label
+                            class="form-check-label"
+                            for="formCheck-1"
+                            style="color: rgb(46,121,195);font-family: 'Allerta Stencil', sans-serif;">Murdor on the
+                            Orient
+                            Express by Agatha Cristie in Portuguese Language. docx&nbsp;</label>
+                    </div>
+                    <button
+                        class="btn btn-primary submit-button" type="submit">Submit Now !</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>
